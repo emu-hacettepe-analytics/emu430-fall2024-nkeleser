@@ -12,6 +12,38 @@ My first assignment has two parts.
 
 ## (a)
 
-x\<-2+2 x
-
 ## (b)
+```{r}
+#Import data
+library(dslabs)
+data("polls_us_election_2016")
+head(polls_us_election_2016, 10)
+```
+
+```{r}
+#Total NA
+total_na<- sum(is.na(polls_us_election_2016))
+total_na
+```
+```{r}
+#Replacing NA
+no_nas<-polls_us_election_2016
+birth_year<-2000
+first_name<-"Necati"
+for (col in names(no_nas)){
+  if(is.numeric(no_nas[[col]])){
+    no_nas[[col]]<-ifelse(is.na(no_nas[[col]]),birth_year,no_nas[[col]])
+  }
+  else if(is.character(no_nas[[col]])|| is.factor(no_nas[[col]])){
+    no_nas[[col]]<-ifelse(is.na(no_nas[[col]]),first_name,as.character(no_nas[[col]]))
+   }
+  }
+  sum(is.na(no_nas))
+
+```
+```{r}
+  head(no_nas,10)
+
+
+```
+
