@@ -12,4 +12,6 @@ My first assignment has two parts.
 
 ## (a)
 
+x\<-2+2 x
+
 ## (b)
