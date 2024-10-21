@@ -13,6 +13,7 @@ My first assignment has two parts.
 ## (a)
 
 ## (b)
+
 ```{r}
 #Import data
 library(dslabs)
@@ -25,6 +26,7 @@ head(polls_us_election_2016, 10)
 total_na<- sum(is.na(polls_us_election_2016))
 total_na
 ```
+
 ```{r}
 #Replacing NA
 no_nas<-polls_us_election_2016
@@ -41,9 +43,9 @@ for (col in names(no_nas)){
   sum(is.na(no_nas))
 
 ```
+
 ```{r}
   head(no_nas,10)
 
 
 ```
-
