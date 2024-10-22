@@ -26,3 +26,7 @@ R, Quarto, Git, Python
 # Hobbies
 
 Football,Music,Gym
+
+# CV
+
+[Download as CV](https://drive.google.com/uc?export=download&id=1zir7CA68LbHucdTRGt2TDBaRX0hjLAUm)
