@@ -19,6 +19,8 @@ sidebar: false
 
 # Projects
 
+1.KOLUMAN Graduation Project 2024-goingon.
+
 # Competencies
 
 R, Quarto, Git, Python
