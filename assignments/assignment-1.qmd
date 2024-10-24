@@ -6,13 +6,10 @@ title: "Assignment 1"
 
 My first assignment has two parts.
 
-## (a)
+## (a)**Brief Summary of Cem Vardar**
 
 Complex system management and optimization are the main areas of study for data science and industrial engineering. Industrial engineers use modeling and simulation to solve organizational issues and guarantee the efficient operation of logistical systems. By turning data into knowledge, data science gives decision-makers more power and makes it possible to track measures like sales and profitability.\
-\
-Data analysis and reporting procedures clearly demonstrate the interplay between these two domains. Important subjects include the effects of quick delivery and conversion funnel analysis. Analytical thinking and data reading abilities are two ways that data scientists add value to businesses. Other topics covered include the influence of internships on jobs and the significance of master's degrees in the business sector.
-
-Finally, the effects of entrepreneurship and artificial intelligence on industrial engineering are highlighted, emphasizing the importance of self-discovery and exploring interests.
+Data analysis and reporting procedures clearly demonstrate the interplay between these two domains. Important subjects include the effects of quick delivery and conversion funnel analysis. Analytical thinking and data reading abilities are two ways that data scientists add value to businesses. Other topics covered include the influence of internships on jobs and the significance of master's degrees in the business sector.Finally, the effects of entrepreneurship and artificial intelligence on industrial engineering are highlighted, emphasizing the importance of self-discovery and exploring interests.
 
 1.)Question: How do you think the interactions between data science and industrial engineering can transform the decision-making processes of organizations? What are the opportunities and challenges that arise when these two disciplines come together?
 
@@ -27,7 +24,7 @@ D)  Data science is only relevant to software development.
 
 Correct Answer: B) Data science helps in the optimization of complex systems.
 
-## (b)
+## (b)Polls_us_election_2016
 
 ```{r}
 #Import data
