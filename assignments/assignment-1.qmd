@@ -24,7 +24,7 @@ D)  Data science is only relevant to software development.
 
 Correct Answer: B) Data science helps in the optimization of complex systems.
 
-## (b)Polls_us_election_2016
+## **(b)Polls_us_election_2016**
 
 ```{r}
 #Import data
