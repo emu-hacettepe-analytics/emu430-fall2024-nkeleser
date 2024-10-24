@@ -4,10 +4,6 @@ title: "Assignment 1"
 
 # Assignment 1
 
-```{r}
-1 + 1
-```
-
 My first assignment has two parts.
 
 ## (a)
@@ -48,23 +44,23 @@ total_na
 
 ```{r}
 #Replacing NA
-no_nas<-polls_us_election_2016
+complete_pool_data<-polls_us_election_2016
 birth_year<-2000
 first_name<-"Necati"
-for (col in names(no_nas)){
-  if(is.numeric(no_nas[[col]])){
-    no_nas[[col]]<-ifelse(is.na(no_nas[[col]]),birth_year,no_nas[[col]])
+for (col in names(complete_pool_data)){
+  if(is.numeric(complete_pool_data[[col]])){
+    complete_pool_data[[col]]<-ifelse(is.na(complete_pool_data[[col]]),birth_year,complete_pool_data[[col]])
   }
-  else if(is.character(no_nas[[col]])|| is.factor(no_nas[[col]])){
-    no_nas[[col]]<-ifelse(is.na(no_nas[[col]]),first_name,as.character(no_nas[[col]]))
+  else if(is.character(complete_pool_data[[col]])|| is.factor(complete_pool_data[[col]])){
+    complete_pool_data[[col]]<-ifelse(is.na(complete_pool_data[[col]]),first_name,as.character(complete_pool_data[[col]]))
    }
   }
-  sum(is.na(no_nas))
+  sum(is.na(complete_pool_data))
 
 ```
 
 ```{r}
-  head(no_nas,10)
+  head(complete_pool_data,10)
 
 
 ```
