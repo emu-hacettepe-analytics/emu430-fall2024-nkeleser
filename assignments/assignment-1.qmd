@@ -6,25 +6,27 @@ title: "Assignment 1"
 
 My first assignment has two parts.
 
-## (a)**Brief Summary of Cem Vardar**
+## (a)Brief Summary of Cem Vardar
 
-Complex system management and optimization are the main areas of study for data science and industrial engineering. Industrial engineers use modeling and simulation to solve organizational issues and guarantee the efficient operation of logistical systems. By turning data into knowledge, data science gives decision-makers more power and makes it possible to track measures like sales and profitability.\
-Data analysis and reporting procedures clearly demonstrate the interplay between these two domains. Important subjects include the effects of quick delivery and conversion funnel analysis. Analytical thinking and data reading abilities are two ways that data scientists add value to businesses. Other topics covered include the influence of internships on jobs and the significance of master's degrees in the business sector.Finally, the effects of entrepreneurship and artificial intelligence on industrial engineering are highlighted, emphasizing the importance of self-discovery and exploring interests.
+Cem Vardar is an industrial engineer who graduated from Arizona State University with a bachelor's degree and a doctorate.He began his career as an intern at Intel before learning about the connection between data science and analytics at Carvana.Data science and industrial engineering are primarily concerned with the management and optimization of complex systems. To solve organizational issues and improve the effectiveness of logistics systems, industrial engineers employ modeling and simulation.By turning data into information, data science enables decision-makers to monitor measures like profitability and sales. Additionally, subjects like funnel analysis and quick delivery are crucial. To provide value to firms, data scientists must possess analytical thinking and data reading abilities. Additionally covered are the value of a master's degree and the effect internships have on business.It highlights the significance of personal growth and pursuing interests, as well as the effects of artificial intelligence and entrepreneurship on industrial engineering.
 
-1.)Question: How do you think the interactions between data science and industrial engineering can transform the decision-making processes of organizations? What are the opportunities and challenges that arise when these two disciplines come together?
+Question 1 : What is funnel analysis and how is it important for businesses?
 
-Answer:The interaction between data science and industrial engineering can help organizations make more efficient and data-driven decisions. Opportunities include benefits such as making more accurate predictions, improving operational efficiency and understanding customer behavior. However, challenges may also arise, such as data security, data integration and the development of analytical capabilities.
+Answer: Funnel analysis is a process that follows a business's potential customers all the way to the purchase stage. This analysis is used to understand and optimize the different stages of the customer journey.
 
-2.)Question: Which of the following statements is one of the impacts of data science on industrial engineering?
+Question 2 : What is the purpose of net lift modeling?
 
-A)  Data science is only used for financial reporting.
-B)  Data science helps in optimization of complex systems.
-C)  Industrial engineers are not interested in data science.
-D)  Data science is only relevant to software development.
+A\) To reduce lead times to increase customer satisfaction.
 
-Correct Answer: B) Data science helps in the optimization of complex systems.
+B\) Measure the impact of marketing campaigns and increase reach to the target audience.
 
-## **(b)Polls_us_election_2016**
+C\) To manage and optimize product inventory levels.
+
+D\) Organizing training programs to increase employee productivity.
+
+Correct Answer: B) Measuring the impact of marketing campaigns and increasing the reach of the target audience.
+
+## (b)Polls_us_election_2016
 
 ```{r}
 #Import data
