@@ -63,8 +63,7 @@ for (col in names(complete_pool_data)){
 complete_pool_data_ten_row<-head(complete_pool_data,10) 
 complete_pool_data_ten_row
 
-#Total number of NA's
-remaining in the new data frame.
+#Total number of NA's remaining in the new data frame.
 total_na<-sum(is.na(complete_pool_data))
 total_na
 
