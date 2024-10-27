@@ -54,12 +54,17 @@ for (col in names(complete_pool_data)){
     complete_pool_data[[col]]<-ifelse(is.na(complete_pool_data[[col]]),first_name,as.character(complete_pool_data[[col]]))
    }
   }
-  sum(is.na(complete_pool_data))
+ 
 
 ```
 
 ```{r}
-  head(complete_pool_data,10)
+#Display the first 10 row and number of NA's  
+complete_pool_data_ten_row<-head(complete_pool_data,10) 
+complete_pool_data_ten_row
+
+sum(is.na(complete_pool_data))
+
 
 
 ```
