@@ -4,14 +4,14 @@
     "href": "project.html",
     "title": "Our Course Project",
     "section": "",
-    "text": "I’m honored to be a member of the [group name] project team.\nBelow, you’ll find a brief summary of our project. To access a detailed project description, please go to https://[your-project-url].\nSummary\n[provide a biref summary of your project]\n\n\n\n Back to top"
+    "text": "I’m honored to be a member of the team_petra project team.\nBelow, you’ll find a brief summary of our project. To access a detailed project description, please go to link.\nSummary\nPoverty and crime are two pervasive societal issues that often exhibit a complex relationship. This study aims to explore the impact of poverty rates on crime, focusing on the interplay between socioeconomic disparities and criminal behavior. Using data analytics techniques, we analyze crime statistics and poverty rates across various regions to uncover potential correlations and causations.\n\n\n\n Back to top"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Welcome to My Analytics Lab",
     "section": "",
-    "text": "Hello! My name is xxx xxxx.\nThis is my personal webpage.\nPlease stay tuned to follow my works on data analytics, blog posts, and more.\nThis is our template.\n\n\n\n Back to top"
+    "text": "Hello! My name is Necati Keleşer.\nThis is my personal webpage.\nPlease stay tuned to follow my works on data analytics, blog posts, and more.\nThis is our template.\n\n\n\n Back to top"
   },
   {
     "objectID": "assignments/assignment-2.html",
@@ -56,7 +56,10 @@
     "href": "assignments.html",
     "title": "My Assignments",
     "section": "",
-    "text": "On this page, I showcase the assignment I conducted for the [term and year, e.g. Fall 2023] EMU 430 Data Analytics course.\nPlease use left menu to navigate through my assignments.\nThe most recent update to this page was made on October 25, 2023\n\n\n\n Back to top"
+    "text": "On this page, I showcase the assignment I conducted for the [term and year, e.g. Fall 2024] EMU430 Data Analytics course.\nPlease use left menu to navigate through my assignments.\nThe most recent update to this page was made on October 10, 2024\n\n\n\n Back to top",
+    "crumbs": [
+      "My Assignments"
+    ]
   },
   {
     "objectID": "posts.html",
