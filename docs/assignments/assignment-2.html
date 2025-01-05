@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>[Student/Group Full Name]’s Analytics Lab - Assignment 2</title>
+<title>Assignment 2 – Necati Keleşer’s Analytics Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,7 +22,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -33,7 +33,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -82,7 +82,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -91,6 +97,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -105,65 +112,65 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">[Student/Group Full Name]’s Analytics Lab</span>
+    <span class="navbar-title">Necati Keleşer’s Analytics Lab</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html" rel="" target="">
- <span class="menu-text">About Me</span></a>
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About Me</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../posts.html" rel="" target="">
- <span class="menu-text">My Posts</span></a>
+    <a class="nav-link" href="../posts.html"> 
+<span class="menu-text">My Posts</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-emu430-coursework" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-emu430-coursework" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">EMU430 Coursework</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-emu430-coursework">    
         <li>
-    <a class="dropdown-item" href="../assignments.html" rel="" target="">
+    <a class="dropdown-item" href="../assignments.html">
  <span class="dropdown-text">Assignments</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../project.html" rel="" target="">
+    <a class="dropdown-item" href="../project.html">
  <span class="dropdown-text">Project</span></a>
   </li>  
     </ul>
   </li>
 </ul>
-            <div class="quarto-navbar-tools ms-auto tools-wide">
-    <a href="https://twitter.com" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
-    <a href="https://twitter.com" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
-    <a href="https://linkedin.com" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools tools-wide">
+    <a href="https://twitter.com" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+    <a href="https://twitter.com" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
+    <a href="https://linkedin.com" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../assignments/assignment-2.html">Assignment 2</a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../assignments/assignment-2.html">Assignment 2</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -172,7 +179,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
@@ -205,12 +212,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#assignment-2" id="toc-assignment-2" class="nav-link active" data-scroll-target="#assignment-2">Assignment 2</a></li>
+  <li><a href="#part1-2" id="toc-part1-2" class="nav-link" data-scroll-target="#part1-2">Part1-2</a></li>
+  <li><a href="#part-3." id="toc-part-3." class="nav-link" data-scroll-target="#part-3.">Part 3.</a>
+  <ul class="collapse">
+  <li><a href="#a-arrange-your-data-frame-in-descending-order-by-rating.-present-the-top-5-and-bottom-5-movies-based-on-user-ratings.-have-you-watched-any-of-these-movies-do-you-agree-or-disagree-with-their-current-imdb-ratings" id="toc-a-arrange-your-data-frame-in-descending-order-by-rating.-present-the-top-5-and-bottom-5-movies-based-on-user-ratings.-have-you-watched-any-of-these-movies-do-you-agree-or-disagree-with-their-current-imdb-ratings" class="nav-link" data-scroll-target="#a-arrange-your-data-frame-in-descending-order-by-rating.-present-the-top-5-and-bottom-5-movies-based-on-user-ratings.-have-you-watched-any-of-these-movies-do-you-agree-or-disagree-with-their-current-imdb-ratings">a) Arrange your data frame in descending order by Rating. Present the top 5 and bottom 5 movies based on user ratings. Have you watched any of these movies? Do you agree or disagree with their current IMDb Ratings?</a></li>
+  <li><a href="#b.-check-the-ratings-of-2-3-of-your-favorite-movies.-what-are-their-standings" id="toc-b.-check-the-ratings-of-2-3-of-your-favorite-movies.-what-are-their-standings" class="nav-link" data-scroll-target="#b.-check-the-ratings-of-2-3-of-your-favorite-movies.-what-are-their-standings">b. Check the ratings of 2-3 of your favorite movies. What are their standings?</a></li>
+  <li><a href="#c.-considering-that-audience-rating-is-a-crucial-indicator-of-movie-quality-what-canyou-infer-about-the-average-ratings-of-turkish-movies-over-the-years-calculate-yearly-rating-averages-and-plot-them-as-a-scatter-plot.-hint-use-functions-like-group_by-summarise-mean-ggplot-geom_point.-similarly-plot-the-number-of-movies-over-the-years.-you-might-observe-that-using-yearly-averages-could-be-misleading-due-to-the-increasing-number-of-movies-each-year.-as-an-alternative-solution-plot-box-plots-of-ratings-over-the-years-each-year-having-a-box-plot-showing-statistics-about-the-ratings-of-movies-in-that-year.-what-insights-do-you-gather-from-the-box-plot" id="toc-c.-considering-that-audience-rating-is-a-crucial-indicator-of-movie-quality-what-canyou-infer-about-the-average-ratings-of-turkish-movies-over-the-years-calculate-yearly-rating-averages-and-plot-them-as-a-scatter-plot.-hint-use-functions-like-group_by-summarise-mean-ggplot-geom_point.-similarly-plot-the-number-of-movies-over-the-years.-you-might-observe-that-using-yearly-averages-could-be-misleading-due-to-the-increasing-number-of-movies-each-year.-as-an-alternative-solution-plot-box-plots-of-ratings-over-the-years-each-year-having-a-box-plot-showing-statistics-about-the-ratings-of-movies-in-that-year.-what-insights-do-you-gather-from-the-box-plot" class="nav-link" data-scroll-target="#c.-considering-that-audience-rating-is-a-crucial-indicator-of-movie-quality-what-canyou-infer-about-the-average-ratings-of-turkish-movies-over-the-years-calculate-yearly-rating-averages-and-plot-them-as-a-scatter-plot.-hint-use-functions-like-group_by-summarise-mean-ggplot-geom_point.-similarly-plot-the-number-of-movies-over-the-years.-you-might-observe-that-using-yearly-averages-could-be-misleading-due-to-the-increasing-number-of-movies-each-year.-as-an-alternative-solution-plot-box-plots-of-ratings-over-the-years-each-year-having-a-box-plot-showing-statistics-about-the-ratings-of-movies-in-that-year.-what-insights-do-you-gather-from-the-box-plot">c.&nbsp;Considering that audience rating is a crucial indicator of movie quality, what canyou infer about the average ratings of Turkish movies over the years? Calculate yearly rating averages and plot them as a scatter plot. Hint: Use functions like group_by(), summarise(), mean(), ggplot(), geom_point(). Similarly, plot the number of movies over the years. You might observe that using yearly averages could be misleading due to the increasing number of movies each year. As an alternative solution, plot box plots of ratings over the years (each year having a box plot showing statistics about the ratings of movies in that year). What insights do you gather from the box plot?</a></li>
+  <li><a href="#d.-do-you-believe-there-is-a-relationship-between-the-number-of-votes-a-movie-receivedand-its-rating-investigate-the-correlation-between-votes-and-ratings." id="toc-d.-do-you-believe-there-is-a-relationship-between-the-number-of-votes-a-movie-receivedand-its-rating-investigate-the-correlation-between-votes-and-ratings." class="nav-link" data-scroll-target="#d.-do-you-believe-there-is-a-relationship-between-the-number-of-votes-a-movie-receivedand-its-rating-investigate-the-correlation-between-votes-and-ratings.">d.&nbsp;Do you believe there is a relationship between the number of votes a movie receivedand its rating? Investigate the correlation between Votes and Ratings.</a></li>
+  <li><a href="#e.-do-you-believe-there-is-a-relationship-between-a-movies-duration-and-its-rating" id="toc-e.-do-you-believe-there-is-a-relationship-between-a-movies-duration-and-its-rating" class="nav-link" data-scroll-target="#e.-do-you-believe-there-is-a-relationship-between-a-movies-duration-and-its-rating">e. Do you believe there is a relationship between a movie’s duration and its rating?</a></li>
+  </ul></li>
+  <li><a href="#part-4" id="toc-part-4" class="nav-link" data-scroll-target="#part-4">Part 4</a></li>
+  <li><a href="#repeat-steps-1-and-2-for-a-different-advanced-imdb-search.-this-time-find-turkish-movies-that-are-in-the-top-1000-movies-on-imdb.-perform-similar-scraping-to-create-another-data-frame-with-only-the-columns-title-year." id="toc-repeat-steps-1-and-2-for-a-different-advanced-imdb-search.-this-time-find-turkish-movies-that-are-in-the-top-1000-movies-on-imdb.-perform-similar-scraping-to-create-another-data-frame-with-only-the-columns-title-year." class="nav-link" data-scroll-target="#repeat-steps-1-and-2-for-a-different-advanced-imdb-search.-this-time-find-turkish-movies-that-are-in-the-top-1000-movies-on-imdb.-perform-similar-scraping-to-create-another-data-frame-with-only-the-columns-title-year.">Repeat steps 1 and 2 for a different advanced IMDb search. This time, find Turkish movies that are in the top 1000 movies on IMDb. Perform similar scraping to create another Data Frame with only the columns: Title, Year.</a>
+  <ul class="collapse">
+  <li><a href="#order-the-11-movies-based-on-their-rank.-are-these-the-same-first-high-rated-11movies-in-your-initial-data-frame-if-yes-does-this-imply-that-imdb-uses-rankingsalone-to-determine-their-top-1000-movie-list-if-not-what-does-this-imply" id="toc-order-the-11-movies-based-on-their-rank.-are-these-the-same-first-high-rated-11movies-in-your-initial-data-frame-if-yes-does-this-imply-that-imdb-uses-rankingsalone-to-determine-their-top-1000-movie-list-if-not-what-does-this-imply" class="nav-link" data-scroll-target="#order-the-11-movies-based-on-their-rank.-are-these-the-same-first-high-rated-11movies-in-your-initial-data-frame-if-yes-does-this-imply-that-imdb-uses-rankingsalone-to-determine-their-top-1000-movie-list-if-not-what-does-this-imply">Order the 11 movies based on their Rank. Are these the same first high-rated 11movies in your initial data frame? If yes, does this imply that IMDb uses rankingsalone to determine their top 1000 movie list? If not, what does this imply?</a></li>
+  </ul></li>
   </ul>
 </nav>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -230,18 +251,619 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
   
 
+
 </header>
+
 
 <section id="assignment-2" class="level1">
 <h1>Assignment 2</h1>
+</section>
+<section id="part1-2" class="level1">
+<h1>Part1-2</h1>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Required Libraries</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse) <span class="co"># for everything :) </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.4     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rvest) <span class="co"># for HTML scraping </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr) <span class="co"># for string processing</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co">#URL's</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>URLS <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"https://m.imdb.com/search/title/?title_type=feature&amp;release_date=2010-01-01,2023-12-31&amp;num_votes=2500,&amp;country_of_origin=TR&amp;count=250"</span> ,<span class="st">"https://m.imdb.com/search/title/?title_type=feature&amp;release_date=,2009-12-31&amp;num_votes=2500,&amp;country_of_origin=TR&amp;count=250"</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co">#Scrapping </span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>data_html <span class="ot">&lt;-</span> <span class="fu">read_html</span>(URLS[<span class="dv">1</span>])</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="co"># extract titles (movie names)</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>title_names <span class="ot">&lt;-</span> data_html <span class="sc">|&gt;</span> <span class="fu">html_nodes</span>(<span class="st">'.ipc-title__text'</span>)</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>title_names <span class="ot">&lt;-</span> <span class="fu">html_text</span>(title_names)</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>title_names <span class="ot">&lt;-</span> <span class="fu">tail</span>(<span class="fu">head</span>(title_names,<span class="sc">-</span><span class="dv">1</span>),<span class="sc">-</span><span class="dv">1</span>)</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>title_names <span class="ot">&lt;-</span> <span class="fu">str_split</span>(title_names, <span class="st">" "</span>, <span class="at">n=</span><span class="dv">2</span>)</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>title_names <span class="ot">&lt;-</span> <span class="fu">unlist</span>(<span class="fu">lapply</span>(title_names, <span class="cf">function</span>(x) {x[<span class="dv">2</span>]}))</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="co"># extract years </span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>years <span class="ot">&lt;-</span> data_html <span class="sc">|&gt;</span> <span class="fu">html_nodes</span>(<span class="st">'.sc-300a8231-7:nth-child(1)'</span>) <span class="sc">|&gt;</span> <span class="fu">html_text</span>()</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="co"># extract durations </span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>durations <span class="ot">&lt;-</span> data_html <span class="sc">|&gt;</span> <span class="fu">html_nodes</span>(<span class="st">'.sc-300a8231-7:nth-child(2)'</span>) <span class="sc">|&gt;</span> <span class="fu">html_text</span>()</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>durations <span class="ot">&lt;-</span> <span class="fu">sapply</span>(durations, <span class="cf">function</span>(x) {</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>  time_parts <span class="ot">&lt;-</span> <span class="fu">strsplit</span>(x, <span class="st">"h|m"</span>)[[<span class="dv">1</span>]]</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.numeric</span>(time_parts[<span class="dv">1</span>]) <span class="sc">*</span> <span class="dv">60</span> <span class="sc">+</span> <span class="fu">as.numeric</span>(time_parts[<span class="dv">2</span>])</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a><span class="co">#extract rating</span></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>ratings <span class="ot">&lt;-</span> data_html <span class="sc">|&gt;</span> <span class="fu">html_nodes</span>(<span class="st">'.ipc-rating-star--rating'</span>) <span class="sc">|&gt;</span> <span class="fu">html_text</span>()</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a><span class="co">#extract votes</span></span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>votes <span class="ot">&lt;-</span> data_html <span class="sc">%&gt;%</span> <span class="fu">html_nodes</span>(<span class="st">".ipc-rating-star--voteCount"</span>) <span class="sc">%&gt;%</span> <span class="fu">html_text</span>()</span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>votes <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"</span><span class="sc">\\</span><span class="st">(|</span><span class="sc">\\</span><span class="st">)| "</span>, <span class="st">""</span>, votes)</span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>imdb_movies_datas <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>  <span class="at">Title =</span> title_names,</span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a>  <span class="at">Year =</span> years,</span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a>  <span class="at">Duration =</span> durations,</span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a>  <span class="at">Rating =</span> ratings,</span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>  <span class="at">Votes =</span> votes,</span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>  <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span></span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>(imdb_movies_datas) <span class="ot">&lt;-</span> <span class="cn">NULL</span> </span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(imdb_movies_datas)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<pre><code>                      Title Year Duration Rating Votes
+1         Kuru Otlar Üstüne 2023      197    7.7  &nbsp;16K
+2  Yedinci Kogustaki Mucize 2019      132    8.2  &nbsp;58K
+3                    Baskin 2015       97    5.8  &nbsp;13K
+4                Kis Uykusu 2014      196    8.0  &nbsp;57K
+5         Cebimdeki Yabanci 2018       95    6.8  &nbsp;10K
+6                      Ayla 2017      125    8.2  &nbsp;45K
+7   Bir Zamanlar Anadolu'da 2011      157    7.8  &nbsp;52K
+8               Ahlat Agaci 2018      188    8.0  &nbsp;29K
+9   Istanbul Için Son Çagri 2023       91    5.3 &nbsp;9.6K
+10                   Dag II 2016      135    8.2 &nbsp;111K
+11             Kurak Günler 2022      129    7.5  &nbsp;13K
+12      Dabbe: Cin Çarpmasi 2013      134    6.8 &nbsp;7.9K
+13                   Mucize 2015      136    7.6  &nbsp;15K
+14                   Bihter 2023      113    3.6 &nbsp;4.1K
+15                   Siccîn 2014       96    6.0 &nbsp;5.7K
+16           Ölümlü Dünya 2 2023      117    6.8 &nbsp;9.7K
+17             Ölümlü Dünya 2018      107    7.6  &nbsp;33K
+18                     Kedi 2016       79    7.6  &nbsp;16K
+19   The Ottoman Lieutenant 2017      106    6.4  &nbsp;27K
+20                      Dag 2012       90    7.5  &nbsp;24K
+21               Av Mevsimi 2010      140    7.4  &nbsp;38K
+22           Do Not Disturb 2023      114    6.3  &nbsp;11K
+23              Okul Tirasi 2021       85    7.3 &nbsp;3.5K
+24            Aile Arasinda 2017      124    7.6  &nbsp;27K
+25                 Siccin 2 2015       93    6.1 &nbsp;4.2K</code></pre>
+</div>
+</div>
+</section>
+<section id="part-3." class="level1">
+<h1>Part 3.</h1>
+<section id="a-arrange-your-data-frame-in-descending-order-by-rating.-present-the-top-5-and-bottom-5-movies-based-on-user-ratings.-have-you-watched-any-of-these-movies-do-you-agree-or-disagree-with-their-current-imdb-ratings" class="level2">
+<h2 class="anchored" data-anchor-id="a-arrange-your-data-frame-in-descending-order-by-rating.-present-the-top-5-and-bottom-5-movies-based-on-user-ratings.-have-you-watched-any-of-these-movies-do-you-agree-or-disagree-with-their-current-imdb-ratings">a) Arrange your data frame in descending order by Rating. Present the top 5 and bottom 5 movies based on user ratings. Have you watched any of these movies? Do you agree or disagree with their current IMDb Ratings?</h2>
+<section id="i-watched-this-movie-yedinci-kogustaki-mucize-and-it-really-deserves-to-be-the-leader.-and-i-completely-agree-with-the-last-5-in-the-list-because-i-generally-do-not-prefer-turkish-horror-movies." class="level4">
+<h4 class="anchored" data-anchor-id="i-watched-this-movie-yedinci-kogustaki-mucize-and-it-really-deserves-to-be-the-leader.-and-i-completely-agree-with-the-last-5-in-the-list-because-i-generally-do-not-prefer-turkish-horror-movies.">I watched this movie Yedinci Kogustaki Mucize and it really deserves to be the leader. And I completely agree with the last 5 in the list because I generally do not prefer Turkish horror movies.</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Arrange the data frame in descending order by Rating</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>movies <span class="ot">&lt;-</span> imdb_movies_datas[<span class="fu">order</span>(imdb_movies_datas<span class="sc">$</span>Rating, <span class="at">decreasing =</span> <span class="cn">TRUE</span>),]</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Top 5 and bottom 5 movies based on user ratings</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>top5_movies <span class="ot">&lt;-</span> <span class="fu">head</span>(movies, <span class="dv">5</span>)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>bottom5_movies <span class="ot">&lt;-</span> <span class="fu">tail</span>(movies, <span class="dv">5</span>)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Print top and bottom movies</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Top 5 Movies:</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Top 5 Movies:</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(top5_movies)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                      Title Year Duration Rating Votes
+2  Yedinci Kogustaki Mucize 2019      132    8.2  &nbsp;58K
+6                      Ayla 2017      125    8.2  &nbsp;45K
+10                   Dag II 2016      135    8.2 &nbsp;111K
+4                Kis Uykusu 2014      196    8.0  &nbsp;57K
+8               Ahlat Agaci 2018      188    8.0  &nbsp;29K</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(bottom5_movies)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                     Title Year Duration Rating Votes
+25                Siccin 2 2015       93    6.1 &nbsp;4.2K
+15                  Siccîn 2014       96    6.0 &nbsp;5.7K
+3                   Baskin 2015       97    5.8  &nbsp;13K
+9  Istanbul Için Son Çagri 2023       91    5.3 &nbsp;9.6K
+14                  Bihter 2023      113    3.6 &nbsp;4.1K</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Convert the datatype of the Rating column </span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>imdb_movies_datas<span class="sc">$</span>Rating <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(imdb_movies_datas<span class="sc">$</span>Rating)</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>max_rating <span class="ot">&lt;-</span> <span class="fu">max</span>(imdb_movies_datas<span class="sc">$</span>Rating, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>min_rating <span class="ot">&lt;-</span> <span class="fu">min</span>(imdb_movies_datas<span class="sc">$</span>Rating, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>mid_point <span class="ot">&lt;-</span> (max_rating <span class="sc">+</span> min_rating) <span class="sc">/</span> <span class="dv">2</span></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>imdb_arranged_by_rating <span class="ot">&lt;-</span> imdb_movies_datas <span class="sc">%&gt;%</span></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(Rating))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(imdb_arranged_by_rating, <span class="fu">aes</span>(<span class="at">x =</span> Rating, <span class="at">y =</span> <span class="fu">reorder</span>(Title, Rating), <span class="at">fill =</span> Rating <span class="sc">&gt;</span> mid_point)) <span class="sc">+</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">x =</span> mid_point, <span class="at">xend =</span> Rating, <span class="at">yend =</span> Title), <span class="at">size =</span> <span class="dv">4</span>) <span class="sc">+</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"red"</span>, <span class="st">"blue"</span>), <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Below Midpoint"</span>, <span class="st">"Above Midpoint"</span>)) <span class="sc">+</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Movies and Ratings"</span>,</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Rating"</span>,</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Movies"</span>,</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">"Rating Category"</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="fu">min</span>(imdb_movies_datas<span class="sc">$</span>Rating), <span class="fu">max</span>(imdb_movies_datas<span class="sc">$</span>Rating), <span class="at">by =</span> <span class="dv">1</span>)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+ℹ Please use `linewidth` instead.</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="assignment-2_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="b.-check-the-ratings-of-2-3-of-your-favorite-movies.-what-are-their-standings" class="level2">
+<h2 class="anchored" data-anchor-id="b.-check-the-ratings-of-2-3-of-your-favorite-movies.-what-are-their-standings">b. Check the ratings of 2-3 of your favorite movies. What are their standings?</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>favorite_movies <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Dag II"</span>,<span class="st">"Bihter"</span>,<span class="st">"Kis Uykusu"</span>)  </span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Check the ratings of my favorite movies</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>ratings_of_favorite_movies <span class="ot">&lt;-</span> movies[(movies<span class="sc">$</span>Title <span class="sc">%in%</span> favorite_movies), <span class="fu">c</span>(<span class="st">"Title"</span>, <span class="st">"Rating"</span>, <span class="st">"Year"</span>, <span class="st">"Duration"</span>)]</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Arrange the data frame in descending order by Rating</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>ratings_of_favorite_movies <span class="ot">&lt;-</span> ratings_of_favorite_movies[<span class="fu">order</span>(ratings_of_favorite_movies<span class="sc">$</span>Rating, <span class="at">decreasing =</span> <span class="cn">TRUE</span>), ]</span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Print standings of my favorite movies</span></span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Standings of My Favorite Movies:</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Standings of My Favorite Movies:</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(ratings_of_favorite_movies)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>        Title Rating Year Duration
+10     Dag II    8.2 2016      135
+4  Kis Uykusu    8.0 2014      196
+14     Bihter    3.6 2023      113</code></pre>
+</div>
+</div>
+</section>
+<section id="c.-considering-that-audience-rating-is-a-crucial-indicator-of-movie-quality-what-canyou-infer-about-the-average-ratings-of-turkish-movies-over-the-years-calculate-yearly-rating-averages-and-plot-them-as-a-scatter-plot.-hint-use-functions-like-group_by-summarise-mean-ggplot-geom_point.-similarly-plot-the-number-of-movies-over-the-years.-you-might-observe-that-using-yearly-averages-could-be-misleading-due-to-the-increasing-number-of-movies-each-year.-as-an-alternative-solution-plot-box-plots-of-ratings-over-the-years-each-year-having-a-box-plot-showing-statistics-about-the-ratings-of-movies-in-that-year.-what-insights-do-you-gather-from-the-box-plot" class="level2">
+<h2 class="anchored" data-anchor-id="c.-considering-that-audience-rating-is-a-crucial-indicator-of-movie-quality-what-canyou-infer-about-the-average-ratings-of-turkish-movies-over-the-years-calculate-yearly-rating-averages-and-plot-them-as-a-scatter-plot.-hint-use-functions-like-group_by-summarise-mean-ggplot-geom_point.-similarly-plot-the-number-of-movies-over-the-years.-you-might-observe-that-using-yearly-averages-could-be-misleading-due-to-the-increasing-number-of-movies-each-year.-as-an-alternative-solution-plot-box-plots-of-ratings-over-the-years-each-year-having-a-box-plot-showing-statistics-about-the-ratings-of-movies-in-that-year.-what-insights-do-you-gather-from-the-box-plot">c.&nbsp;Considering that audience rating is a crucial indicator of movie quality, what canyou infer about the average ratings of Turkish movies over the years? Calculate yearly rating averages and plot them as a scatter plot. Hint: Use functions like group_by(), summarise(), mean(), ggplot(), geom_point(). Similarly, plot the number of movies over the years. You might observe that using yearly averages could be misleading due to the increasing number of movies each year. As an alternative solution, plot box plots of ratings over the years (each year having a box plot showing statistics about the ratings of movies in that year). What insights do you gather from the box plot?</h2>
+<section id="from-the-graph-i-observed-that-the-years-2014-2016-and-2017-had-higher-average-scores-and-higher-quality-films-were-produced-in-these-years.-however-i-noticed-that-in-2023-although-the-number-of-films-was-higher-the-average-scores-were-lower.-i-think-that-the-films-that-people-liked-in-the-past-are-fewer-today-or-the-quality-of-the-films-is-decreasing." class="level4">
+<h4 class="anchored" data-anchor-id="from-the-graph-i-observed-that-the-years-2014-2016-and-2017-had-higher-average-scores-and-higher-quality-films-were-produced-in-these-years.-however-i-noticed-that-in-2023-although-the-number-of-films-was-higher-the-average-scores-were-lower.-i-think-that-the-films-that-people-liked-in-the-past-are-fewer-today-or-the-quality-of-the-films-is-decreasing.">From the graph, I observed that the years 2014, 2016 and 2017 had higher average scores and higher quality films were produced in these years. However, I noticed that in 2023, although the number of films was higher, the average scores were lower. I think that the films that people liked in the past are fewer today or the quality of the films is decreasing.</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>imdb_movies_datas<span class="sc">$</span>Rating <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(imdb_movies_datas<span class="sc">$</span>Rating)</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(imdb_movies_datas<span class="sc">$</span>Rating)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  3.600   6.400   7.500   7.044   7.700   8.200 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>average_ratings <span class="ot">&lt;-</span> imdb_movies_datas <span class="sc">%&gt;%</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Year) <span class="sc">%&gt;%</span></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">Average_Rating =</span> <span class="fu">mean</span>(Rating, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),  <span class="co"># Eksik değerleri yok say</span></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">Number_of_Movies =</span> <span class="fu">n</span>())</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Scatter plot</span></span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(average_ratings, <span class="fu">aes</span>(<span class="at">x =</span> Year, <span class="at">y =</span> Average_Rating, <span class="at">size =</span> Number_of_Movies)) <span class="sc">+</span></span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Average Rating by Year"</span>,</span>
+<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Year"</span>,</span>
+<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Average Rating"</span>) <span class="sc">+</span></span>
+<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="assignment-2_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>updated_movie <span class="ot">&lt;-</span> imdb_movies_datas <span class="sc">%&gt;%</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Year) <span class="sc">%&gt;%</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Mean_Rating =</span> <span class="fu">mean</span>(Rating, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),  </span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>         <span class="at">Total_Film_Count =</span> <span class="fu">n</span>())</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>plot_mean_rating_year_bar <span class="ot">&lt;-</span> updated_movie <span class="sc">%&gt;%</span></span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> Year, <span class="at">y =</span> Mean_Rating)) <span class="sc">+</span></span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">fill =</span> <span class="st">"brown"</span>) <span class="sc">+</span>  </span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Average Rating by Year"</span>, </span>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Year"</span>, </span>
+<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Average Rating"</span></span>
+<span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb23-15"><a href="#cb23-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-16"><a href="#cb23-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Grafiği yazdır</span></span>
+<span id="cb23-17"><a href="#cb23-17" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(plot_mean_rating_year_bar)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="assignment-2_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(imdb_movies_datas, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">as.factor</span>(Year), <span class="at">y =</span> Rating)) <span class="sc">+</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">fill =</span> <span class="st">"brown"</span>) <span class="sc">+</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Box Plots of Ratings of Turkish Movies Over the Years"</span>,</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Year"</span>,</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Rating"</span>) <span class="sc">+</span></span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="assignment-2_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Number of movies over the years</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(average_ratings, <span class="fu">aes</span>(<span class="at">x =</span> Year, <span class="at">y =</span> Number_of_Movies)) <span class="sc">+</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">fill =</span> <span class="st">"brown"</span>) <span class="sc">+</span></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Number of Turkish Movies Released Each Year"</span>,</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Year"</span>,</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Number of Movies"</span>) <span class="sc">+</span></span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="assignment-2_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(average_ratings, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">as.numeric</span>(Year), <span class="at">y =</span> Number_of_Movies)) <span class="sc">+</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">3</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">alpha =</span> <span class="fl">0.7</span>) <span class="sc">+</span>  </span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">group =</span> <span class="dv">1</span>, <span class="at">color =</span> <span class="st">"blue"</span>, <span class="at">linetype =</span> <span class="st">"dashed"</span>, <span class="at">alpha =</span> <span class="fl">0.6</span>) <span class="sc">+</span>  </span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Number of Turkish Movies Released Each Year"</span>,</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Year"</span>,</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Number of Movies"</span></span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="assignment-2_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="d.-do-you-believe-there-is-a-relationship-between-the-number-of-votes-a-movie-receivedand-its-rating-investigate-the-correlation-between-votes-and-ratings." class="level2">
+<h2 class="anchored" data-anchor-id="d.-do-you-believe-there-is-a-relationship-between-the-number-of-votes-a-movie-receivedand-its-rating-investigate-the-correlation-between-votes-and-ratings.">d.&nbsp;Do you believe there is a relationship between the number of votes a movie receivedand its rating? Investigate the correlation between Votes and Ratings.</h2>
+<section id="the-correlation-coefficient-between-movie-length-and-scores-is-0.4558-indicating-a-positive-and-moderate-relationship-between-the-two-variables.-this-means-that-longer-movies-generally-receive-higher-scores-but-this-is-not-always-the-case.sıri-got-help-from-ai" class="level4">
+<h4 class="anchored" data-anchor-id="the-correlation-coefficient-between-movie-length-and-scores-is-0.4558-indicating-a-positive-and-moderate-relationship-between-the-two-variables.-this-means-that-longer-movies-generally-receive-higher-scores-but-this-is-not-always-the-case.sıri-got-help-from-ai">The correlation coefficient between movie length and scores is 0.4558, indicating a positive and moderate relationship between the two variables. This means that longer movies generally receive higher scores, but this is not always the case.(Sır,I got help from AI)</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 'K' karakterlerini kaldır</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>imdb_movies_datas<span class="sc">$</span>Votes <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"K"</span>, <span class="st">""</span>, imdb_movies_datas<span class="sc">$</span>Votes)</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Sonuçları kontrol et</span></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(imdb_movies_datas<span class="sc">$</span>Votes)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "&nbsp;16" "&nbsp;58" "&nbsp;13" "&nbsp;57" "&nbsp;10" "&nbsp;45"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Boşlukları kaldır</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>imdb_movies_datas<span class="sc">$</span>Votes <span class="ot">&lt;-</span> <span class="fu">trimws</span>(imdb_movies_datas<span class="sc">$</span>Votes)</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Geçersiz karakterleri kaldır (sadece sayılar ve 'K' kalır)</span></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>imdb_movies_datas<span class="sc">$</span>Votes <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"[^0-9K]"</span>, <span class="st">""</span>, imdb_movies_datas<span class="sc">$</span>Votes)</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 'K' harfini kaldır</span></span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>imdb_movies_datas<span class="sc">$</span>Votes <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"K"</span>, <span class="st">""</span>, imdb_movies_datas<span class="sc">$</span>Votes)</span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Sayısal hale çevir</span></span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a>imdb_movies_datas<span class="sc">$</span>Rating <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(imdb_movies_datas<span class="sc">$</span>Rating)</span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Veri yapısını tekrar kontrol et</span></span>
+<span id="cb29-14"><a href="#cb29-14" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(imdb_movies_datas)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>'data.frame':   25 obs. of  5 variables:
+ $ Title   : chr  "Kuru Otlar Üstüne" "Yedinci Kogustaki Mucize" "Baskin" "Kis Uykusu" ...
+ $ Year    : chr  "2023" "2019" "2015" "2014" ...
+ $ Duration: num  197 132 97 196 95 125 157 188 91 135 ...
+ $ Rating  : num  7.7 8.2 5.8 8 6.8 8.2 7.8 8 5.3 8.2 ...
+ $ Votes   : chr  "16" "58" "13" "57" ...</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Duration ve Rating arasındaki korelasyonu hesapla</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>corr_duration_rating <span class="ot">&lt;-</span> <span class="fu">cor</span>(imdb_movies_datas<span class="sc">$</span>Duration, imdb_movies_datas<span class="sc">$</span>Rating, <span class="at">use =</span> <span class="st">"complete.obs"</span>)</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Korelasyon katsayısını yazdır</span></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Correlation Coefficient between Duration and Ratings:"</span>, corr_duration_rating, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Correlation Coefficient between Duration and Ratings: 0.4558398 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(imdb_movies_datas, <span class="fu">aes</span>(<span class="at">x =</span> Duration, <span class="at">y =</span> Rating)) <span class="sc">+</span></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.6</span>, <span class="at">color =</span> <span class="st">"blue"</span>) <span class="sc">+</span>  </span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">color =</span> <span class="st">"red"</span>, <span class="at">se =</span> <span class="cn">TRUE</span>) <span class="sc">+</span>  </span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Relationship Between Movie Duration and IMDb Rating"</span>,</span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Duration (Min)"</span>,</span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"IMDb Rating"</span></span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="assignment-2_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="e.-do-you-believe-there-is-a-relationship-between-a-movies-duration-and-its-rating" class="level2">
+<h2 class="anchored" data-anchor-id="e.-do-you-believe-there-is-a-relationship-between-a-movies-duration-and-its-rating">e. Do you believe there is a relationship between a movie’s duration and its rating?</h2>
+<p>Investigate the correlation between Duration and Ratings.</p>
+<section id="the-correlation-coefficient-between-the-number-of-votes-and-the-ratings-is--0.0342-indicating-that-there-is-almost-no-relationship-between-these-two-variables.-that-is-the-number-of-votes-a-movie-receives-does-not-significantly-affect-its-ratings.sır-i-got-help-from-ai" class="level4">
+<h4 class="anchored" data-anchor-id="the-correlation-coefficient-between-the-number-of-votes-and-the-ratings-is--0.0342-indicating-that-there-is-almost-no-relationship-between-these-two-variables.-that-is-the-number-of-votes-a-movie-receives-does-not-significantly-affect-its-ratings.sır-i-got-help-from-ai">The correlation coefficient between the number of votes and the ratings is -0.0342, indicating that there is almost no relationship between these two variables. That is, the number of votes a movie receives does not significantly affect its ratings.(Sır, I got help from AI)</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>imdb_movies_datas<span class="sc">$</span>Votes <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"K"</span>, <span class="st">""</span>, imdb_movies_datas<span class="sc">$</span>Votes)</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Sonuçları kontrol et</span></span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(imdb_movies_datas<span class="sc">$</span>Votes)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "16" "58" "13" "57" "10" "45"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Boşlukları kaldır</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>imdb_movies_datas<span class="sc">$</span>Votes <span class="ot">&lt;-</span> <span class="fu">trimws</span>(imdb_movies_datas<span class="sc">$</span>Votes)</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Geçersiz karakterleri kaldır (sadece sayılar ve 'K' kalır)</span></span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>imdb_movies_datas<span class="sc">$</span>Votes <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"[^0-9K]"</span>, <span class="st">""</span>, imdb_movies_datas<span class="sc">$</span>Votes)</span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 'K' harfini kaldır</span></span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>imdb_movies_datas<span class="sc">$</span>Votes <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"K"</span>, <span class="st">""</span>, imdb_movies_datas<span class="sc">$</span>Votes)</span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Sayısal hale çevir</span></span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a>imdb_movies_datas<span class="sc">$</span>Rating <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(imdb_movies_datas<span class="sc">$</span>Rating)</span>
+<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a>imdb_movies_datas<span class="sc">$</span>Votes <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(imdb_movies_datas<span class="sc">$</span>Votes)</span>
+<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-14"><a href="#cb37-14" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(imdb_movies_datas)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>'data.frame':   25 obs. of  5 variables:
+ $ Title   : chr  "Kuru Otlar Üstüne" "Yedinci Kogustaki Mucize" "Baskin" "Kis Uykusu" ...
+ $ Year    : chr  "2023" "2019" "2015" "2014" ...
+ $ Duration: num  197 132 97 196 95 125 157 188 91 135 ...
+ $ Rating  : num  7.7 8.2 5.8 8 6.8 8.2 7.8 8 5.3 8.2 ...
+ $ Votes   : num  16 58 13 57 10 45 52 29 96 111 ...</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>corr_votes_rating <span class="ot">&lt;-</span> <span class="fu">cor</span>(imdb_movies_datas<span class="sc">$</span>Votes, imdb_movies_datas<span class="sc">$</span>Rating, <span class="at">use =</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>                           <span class="st">"complete.obs"</span>)</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Correlation Coefficient between Votes and Ratings:"</span>, corr_votes_rating, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Correlation Coefficient between Votes and Ratings: -0.03422073 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(imdb_movies_datas)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>'data.frame':   25 obs. of  5 variables:
+ $ Title   : chr  "Kuru Otlar Üstüne" "Yedinci Kogustaki Mucize" "Baskin" "Kis Uykusu" ...
+ $ Year    : chr  "2023" "2019" "2015" "2014" ...
+ $ Duration: num  197 132 97 196 95 125 157 188 91 135 ...
+ $ Rating  : num  7.7 8.2 5.8 8 6.8 8.2 7.8 8 5.3 8.2 ...
+ $ Votes   : num  16 58 13 57 10 45 52 29 96 111 ...</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>imdb_movies_datas<span class="sc">$</span>Votes <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(imdb_movies_datas<span class="sc">$</span>Votes)</span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>imdb_movies_datas<span class="sc">$</span>Rating <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(imdb_movies_datas<span class="sc">$</span>Rating)</span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(imdb_movies_datas, <span class="fu">aes</span>(<span class="at">x =</span> Votes, <span class="at">y =</span> Rating)) <span class="sc">+</span></span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.6</span>, <span class="at">color =</span> <span class="st">"blue"</span>) <span class="sc">+</span>  </span>
+<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">color =</span> <span class="st">"red"</span>, <span class="at">se =</span> <span class="cn">TRUE</span>) <span class="sc">+</span>  </span>
+<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb43-8"><a href="#cb43-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Relationship Between Votes and IMDb Rating"</span>,</span>
+<span id="cb43-9"><a href="#cb43-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Votes"</span>,</span>
+<span id="cb43-10"><a href="#cb43-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"IMDb Rating"</span></span>
+<span id="cb43-11"><a href="#cb43-11" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb43-12"><a href="#cb43-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="assignment-2_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="part-4" class="level1">
+<h1>Part 4</h1>
+</section>
+<section id="repeat-steps-1-and-2-for-a-different-advanced-imdb-search.-this-time-find-turkish-movies-that-are-in-the-top-1000-movies-on-imdb.-perform-similar-scraping-to-create-another-data-frame-with-only-the-columns-title-year." class="level1">
+<h1>Repeat steps 1 and 2 for a different advanced IMDb search. This time, find Turkish movies that are in the top 1000 movies on IMDb. Perform similar scraping to create another Data Frame with only the columns: Title, Year.</h1>
+<section id="order-the-11-movies-based-on-their-rank.-are-these-the-same-first-high-rated-11movies-in-your-initial-data-frame-if-yes-does-this-imply-that-imdb-uses-rankingsalone-to-determine-their-top-1000-movie-list-if-not-what-does-this-imply" class="level3">
+<h3 class="anchored" data-anchor-id="order-the-11-movies-based-on-their-rank.-are-these-the-same-first-high-rated-11movies-in-your-initial-data-frame-if-yes-does-this-imply-that-imdb-uses-rankingsalone-to-determine-their-top-1000-movie-list-if-not-what-does-this-imply">Order the 11 movies based on their Rank. Are these the same first high-rated 11movies in your initial data frame? If yes, does this imply that IMDb uses rankingsalone to determine their top 1000 movie list? If not, what does this imply?</h3>
+<section id="this-answer-is-no-they-are-not-the-same.-my-guess-is-that-it-is-just-not-ranked-but-is-actually-applied-using-an-average-of-all-the-factors-or-some-other-metric.sir-i-got-help-from-ai" class="level4">
+<h4 class="anchored" data-anchor-id="this-answer-is-no-they-are-not-the-same.-my-guess-is-that-it-is-just-not-ranked-but-is-actually-applied-using-an-average-of-all-the-factors-or-some-other-metric.sir-i-got-help-from-ai">This answer is no, they are not the same. My guess is that it is just not ranked, but is actually applied using an average of all the factors or some other metric.(Sir, I got help from AI)</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rvest)</span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Turkish Top 1000 URL</span></span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a>url_top_1000_turkish <span class="ot">&lt;-</span> <span class="st">"https://www.imdb.com/search/title/?title_type=feature&amp;groups=top_1000&amp;country_of_origin=TR&amp;sort=num_votes,desc"</span></span>
+<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to scrape Title and Year for Turkish Top 1000 movies</span></span>
+<span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a>scrape_turkish_top_1000_data <span class="ot">&lt;-</span> <span class="cf">function</span>(url) {</span>
+<span id="cb45-9"><a href="#cb45-9" aria-hidden="true" tabindex="-1"></a>  page <span class="ot">&lt;-</span> <span class="fu">read_html</span>(url)</span>
+<span id="cb45-10"><a href="#cb45-10" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb45-11"><a href="#cb45-11" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Scrape titles</span></span>
+<span id="cb45-12"><a href="#cb45-12" aria-hidden="true" tabindex="-1"></a>  titles <span class="ot">&lt;-</span> page <span class="sc">%&gt;%</span> <span class="fu">html_nodes</span>(<span class="st">".ipc-title__text"</span>) <span class="sc">%&gt;%</span> <span class="fu">html_text</span>()</span>
+<span id="cb45-13"><a href="#cb45-13" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb45-14"><a href="#cb45-14" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Scrape years</span></span>
+<span id="cb45-15"><a href="#cb45-15" aria-hidden="true" tabindex="-1"></a>  years <span class="ot">&lt;-</span> page <span class="sc">%&gt;%</span> <span class="fu">html_nodes</span>(<span class="st">".dli-title-metadata-item:nth-child(1)"</span>) <span class="sc">%&gt;%</span> <span class="fu">html_text</span>()</span>
+<span id="cb45-16"><a href="#cb45-16" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb45-17"><a href="#cb45-17" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Clean and match lengths</span></span>
+<span id="cb45-18"><a href="#cb45-18" aria-hidden="true" tabindex="-1"></a>  max_length <span class="ot">&lt;-</span> <span class="fu">max</span>(<span class="fu">length</span>(titles), <span class="fu">length</span>(years))</span>
+<span id="cb45-19"><a href="#cb45-19" aria-hidden="true" tabindex="-1"></a>  titles <span class="ot">&lt;-</span> <span class="fu">rep</span>(titles, <span class="at">length.out =</span> max_length)</span>
+<span id="cb45-20"><a href="#cb45-20" aria-hidden="true" tabindex="-1"></a>  years <span class="ot">&lt;-</span> <span class="fu">rep</span>(years, <span class="at">length.out =</span> max_length)</span>
+<span id="cb45-21"><a href="#cb45-21" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb45-22"><a href="#cb45-22" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Create a data frame with Title and Year</span></span>
+<span id="cb45-23"><a href="#cb45-23" aria-hidden="true" tabindex="-1"></a>  movie_data <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb45-24"><a href="#cb45-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">Title =</span> titles,</span>
+<span id="cb45-25"><a href="#cb45-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">Year =</span> years</span>
+<span id="cb45-26"><a href="#cb45-26" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb45-27"><a href="#cb45-27" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb45-28"><a href="#cb45-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(movie_data)</span>
+<span id="cb45-29"><a href="#cb45-29" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb45-30"><a href="#cb45-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-31"><a href="#cb45-31" aria-hidden="true" tabindex="-1"></a><span class="co"># Title and Year </span></span>
+<span id="cb45-32"><a href="#cb45-32" aria-hidden="true" tabindex="-1"></a>turkish_top_1000_data <span class="ot">&lt;-</span> <span class="fu">scrape_turkish_top_1000_data</span>(url_top_1000_turkish)</span>
+<span id="cb45-33"><a href="#cb45-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-34"><a href="#cb45-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-35"><a href="#cb45-35" aria-hidden="true" tabindex="-1"></a>turkish_top_1000_data<span class="sc">$</span>Year <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">gsub</span>(<span class="st">"[^0-9]"</span>, <span class="st">""</span>, turkish_top_1000_data<span class="sc">$</span>Year))</span>
+<span id="cb45-36"><a href="#cb45-36" aria-hidden="true" tabindex="-1"></a>imdb_movies_datas<span class="sc">$</span>Year <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(imdb_movies_datas<span class="sc">$</span>Year)</span>
+<span id="cb45-37"><a href="#cb45-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-38"><a href="#cb45-38" aria-hidden="true" tabindex="-1"></a>merged_data <span class="ot">&lt;-</span> turkish_top_1000_data <span class="sc">%&gt;%</span></span>
+<span id="cb45-39"><a href="#cb45-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(imdb_movies_datas, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"Title"</span>, <span class="st">"Year"</span>))</span>
+<span id="cb45-40"><a href="#cb45-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-41"><a href="#cb45-41" aria-hidden="true" tabindex="-1"></a>sorted_data <span class="ot">&lt;-</span> merged_data <span class="sc">%&gt;%</span></span>
+<span id="cb45-42"><a href="#cb45-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(<span class="fu">as.numeric</span>(Rating))) <span class="sc">%&gt;%</span></span>
+<span id="cb45-43"><a href="#cb45-43" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">11</span>)</span>
+<span id="cb45-44"><a href="#cb45-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-45"><a href="#cb45-45" aria-hidden="true" tabindex="-1"></a>top_movies <span class="ot">&lt;-</span> imdb_movies_datas <span class="sc">%&gt;%</span></span>
+<span id="cb45-46"><a href="#cb45-46" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(<span class="fu">as.numeric</span>(Rating))) <span class="sc">%&gt;%</span></span>
+<span id="cb45-47"><a href="#cb45-47" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">11</span>)</span>
+<span id="cb45-48"><a href="#cb45-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-49"><a href="#cb45-49" aria-hidden="true" tabindex="-1"></a>same_movies <span class="ot">&lt;-</span> <span class="fu">all</span>(sorted_data<span class="sc">$</span>Title <span class="sc">%in%</span> top_movies<span class="sc">$</span>Title)</span>
+<span id="cb45-50"><a href="#cb45-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-51"><a href="#cb45-51" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (same_movies) {</span>
+<span id="cb45-52"><a href="#cb45-52" aria-hidden="true" tabindex="-1"></a>  <span class="fu">message</span>(<span class="st">"The top 11 movies are the same in both lists. This suggests IMDb rankings might heavily depend on ratings."</span>)</span>
+<span id="cb45-53"><a href="#cb45-53" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb45-54"><a href="#cb45-54" aria-hidden="true" tabindex="-1"></a>  <span class="fu">message</span>(<span class="st">"The top 11 movies differ, indicating IMDb rankings consider other factors beyond ratings, such as votes or popularity."</span>)</span>
+<span id="cb45-55"><a href="#cb45-55" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The top 11 movies differ, indicating IMDb rankings consider other factors beyond ratings, such as votes or popularity.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Print Results</span></span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Top 11 Ranked Turkish Movies by IMDb Rank:</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Top 11 Ranked Turkish Movies by IMDb Rank:</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">Top 11 Highest-Rated Movies from Initial Data Frame:</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Top 11 Highest-Rated Movies from Initial Data Frame:</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(top_movies)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                      Title Year Duration Rating Votes
+1  Yedinci Kogustaki Mucize 2019      132    8.2    58
+2                      Ayla 2017      125    8.2    45
+3                    Dag II 2016      135    8.2   111
+4                Kis Uykusu 2014      196    8.0    57
+5               Ahlat Agaci 2018      188    8.0    29
+6   Bir Zamanlar Anadolu'da 2011      157    7.8    52
+7         Kuru Otlar Üstüne 2023      197    7.7    16
+8                    Mucize 2015      136    7.6    15
+9              Ölümlü Dünya 2018      107    7.6    33
+10                     Kedi 2016       79    7.6    16
+11            Aile Arasinda 2017      124    7.6    27</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(sorted_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 11 × 5
+   Title                        Year Duration Rating Votes
+   &lt;chr&gt;                       &lt;dbl&gt;    &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;
+ 1 Advanced search              2005       NA     NA    NA
+ 2 1. Babam ve Oglum            1996       NA     NA    NA
+ 3 2. Eskiya                    2004       NA     NA    NA
+ 4 3. G.O.R.A.                  2019       NA     NA    NA
+ 5 4. Yedinci Kogustaki Mucize  2014       NA     NA    NA
+ 6 5. Kis Uykusu                2011       NA     NA    NA
+ 7 6. Bir Zamanlar Anadolu'da   2017       NA     NA    NA
+ 8 7. Ayla                      2001       NA     NA    NA
+ 9 8. Vizontele                 2009       NA     NA    NA
+10 9. Nefes                     2018       NA     NA    NA
+11 10. Ahlat Agaci              1998       NA     NA    NA</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(top_movies)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                      Title Year Duration Rating Votes
+1  Yedinci Kogustaki Mucize 2019      132    8.2    58
+2                      Ayla 2017      125    8.2    45
+3                    Dag II 2016      135    8.2   111
+4                Kis Uykusu 2014      196    8.0    57
+5               Ahlat Agaci 2018      188    8.0    29
+6   Bir Zamanlar Anadolu'da 2011      157    7.8    52
+7         Kuru Otlar Üstüne 2023      197    7.7    16
+8                    Mucize 2015      136    7.6    15
+9              Ölümlü Dünya 2018      107    7.6    33
+10                     Kedi 2016       79    7.6    16
+11            Aile Arasinda 2017      124    7.6    27</code></pre>
 </div>
 </div>
 
 
+</section>
+</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
@@ -286,6 +908,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -354,13 +1003,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -395,18 +1046,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -438,11 +1078,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -452,8 +1131,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -465,7 +1153,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -509,6 +1320,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -534,6 +1346,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -595,7 +1433,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../assignments/assignment-1.html" class="pagination-link">
+      <a href="../assignments/assignment-1.html" class="pagination-link" aria-label="Assignment 1">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Assignment 1</span>
       </a>          
   </div>
@@ -608,12 +1446,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center">Hacettepe IE - EMU 430 - Fall 2023</div>
+    <div class="nav-footer-center">
+<p>Hacettepe IE - EMU430 - 2024 Fall</p>
+</div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
   </div>
 </footer>
+
 
 
 

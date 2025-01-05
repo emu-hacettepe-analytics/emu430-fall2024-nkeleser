@@ -4,6 +4,404 @@ title: "Assignment 2"
 
 # Assignment 2
 
+# Part1-2
+
 ```{r}
-1 + 1
+#Required Libraries
+library(tidyverse) # for everything :) 
+library(rvest) # for HTML scraping 
+library(stringr) # for string processing
+
+#URL's
+URLS <- c("https://m.imdb.com/search/title/?title_type=feature&release_date=2010-01-01,2023-12-31&num_votes=2500,&country_of_origin=TR&count=250" ,"https://m.imdb.com/search/title/?title_type=feature&release_date=,2009-12-31&num_votes=2500,&country_of_origin=TR&count=250")
+
+#Scrapping 
+data_html <- read_html(URLS[1])
+
+# extract titles (movie names)
+title_names <- data_html |> html_nodes('.ipc-title__text')
+title_names <- html_text(title_names)
+title_names <- tail(head(title_names,-1),-1)
+title_names <- str_split(title_names, " ", n=2)
+title_names <- unlist(lapply(title_names, function(x) {x[2]}))
+
+# extract years 
+years <- data_html |> html_nodes('.sc-300a8231-7:nth-child(1)') |> html_text()
+
+# extract durations 
+durations <- data_html |> html_nodes('.sc-300a8231-7:nth-child(2)') |> html_text()
+durations <- sapply(durations, function(x) {
+  time_parts <- strsplit(x, "h|m")[[1]]
+  as.numeric(time_parts[1]) * 60 + as.numeric(time_parts[2])
+})
+
+#extract rating
+ratings <- data_html |> html_nodes('.ipc-rating-star--rating') |> html_text()
+
+#extract votes
+votes <- data_html %>% html_nodes(".ipc-rating-star--voteCount") %>% html_text()
+votes <- gsub("\\(|\\)| ", "", votes)
+
+imdb_movies_datas <- data.frame(
+  Title = title_names,
+  Year = years,
+  Duration = durations,
+  Rating = ratings,
+  Votes = votes,
+  stringsAsFactors = FALSE
+)
+
+rownames(imdb_movies_datas) <- NULL 
+print(imdb_movies_datas)
+
+```
+
+# Part 3.
+
+## a) Arrange your data frame in descending order by Rating. Present the top 5 and bottom 5 movies based on user ratings. Have you watched any of these movies? Do you agree or disagree with their current IMDb Ratings?
+
+#### I watched this movie Yedinci Kogustaki Mucize and it really deserves to be the leader. And I completely agree with the last 5 in the list because I generally do not prefer Turkish horror movies.
+
+```{r}
+# Arrange the data frame in descending order by Rating
+movies <- imdb_movies_datas[order(imdb_movies_datas$Rating, decreasing = TRUE),]
+
+# Top 5 and bottom 5 movies based on user ratings
+top5_movies <- head(movies, 5)
+bottom5_movies <- tail(movies, 5)
+
+# Print top and bottom movies
+cat("Top 5 Movies:\n")
+```
+
+```{r}
+print(top5_movies)
+```
+
+```{r}
+print(bottom5_movies)
+```
+
+```{r}
+library(dplyr)
+library(ggplot2)
+
+#Convert the datatype of the Rating column 
+imdb_movies_datas$Rating <- as.numeric(imdb_movies_datas$Rating)
+
+
+max_rating <- max(imdb_movies_datas$Rating, na.rm = TRUE)
+min_rating <- min(imdb_movies_datas$Rating, na.rm = TRUE)
+mid_point <- (max_rating + min_rating) / 2
+
+imdb_arranged_by_rating <- imdb_movies_datas %>%
+  arrange(desc(Rating))
+```
+
+```{r}
+ggplot(imdb_arranged_by_rating, aes(x = Rating, y = reorder(Title, Rating), fill = Rating > mid_point)) +
+  geom_segment(aes(x = mid_point, xend = Rating, yend = Title), size = 4) +
+  scale_fill_manual(values = c("red", "blue"), labels = c("Below Midpoint", "Above Midpoint")) +
+  labs(
+    title = "Movies and Ratings",
+    x = "Rating",
+    y = "Movies",
+    fill = "Rating Category"
+  ) +
+  theme_minimal() +
+  scale_x_continuous(breaks = seq(min(imdb_movies_datas$Rating), max(imdb_movies_datas$Rating), by = 1)) 
+```
+
+## b. Check the ratings of 2-3 of your favorite movies. What are their standings?
+
+```{r}
+# 
+
+favorite_movies <- c("Dag II","Bihter","Kis Uykusu")  
+
+# Check the ratings of my favorite movies
+ratings_of_favorite_movies <- movies[(movies$Title %in% favorite_movies), c("Title", "Rating", "Year", "Duration")]
+
+# Arrange the data frame in descending order by Rating
+ratings_of_favorite_movies <- ratings_of_favorite_movies[order(ratings_of_favorite_movies$Rating, decreasing = TRUE), ]
+
+# Print standings of my favorite movies
+cat("Standings of My Favorite Movies:\n")
+
+```
+
+```{r}
+print(ratings_of_favorite_movies)
+```
+
+## c. Considering that audience rating is a crucial indicator of movie quality, what canyou infer about the average ratings of Turkish movies over the years? Calculate yearly rating averages and plot them as a scatter plot. Hint: Use functions like group_by(), summarise(), mean(), ggplot(), geom_point(). Similarly, plot the number of movies over the years. You might observe that using yearly averages could be misleading due to the increasing number of movies each year. As an alternative solution, plot box plots of ratings over the years (each year having a box plot showing statistics about the ratings of movies in that year). What insights do you gather from the box plot?
+
+#### From the graph, I observed that the years 2014, 2016 and 2017 had higher average scores and higher quality films were produced in these years. However, I noticed that in 2023, although the number of films was higher, the average scores were lower. I think that the films that people liked in the past are fewer today or the quality of the films is decreasing.
+
+```{r}
+
+imdb_movies_datas$Rating <- as.numeric(imdb_movies_datas$Rating)
+
+summary(imdb_movies_datas$Rating)
+
+library(tidyverse)
+library(ggplot2)
+
+average_ratings <- imdb_movies_datas %>%
+  group_by(Year) %>%
+  summarise(Average_Rating = mean(Rating, na.rm = TRUE),  # Eksik değerleri yok say
+            Number_of_Movies = n())
+
+# Scatter plot
+ggplot(average_ratings, aes(x = Year, y = Average_Rating, size = Number_of_Movies)) +
+  geom_point() +
+  labs(title = "Average Rating by Year",
+       x = "Year",
+       y = "Average Rating") +
+  theme_minimal()
+```
+
+```{r}
+updated_movie <- imdb_movies_datas %>%
+  group_by(Year) %>%
+  mutate(Mean_Rating = mean(Rating, na.rm = TRUE),  
+         Total_Film_Count = n())
+
+plot_mean_rating_year_bar <- updated_movie %>%
+  ggplot(aes(x = Year, y = Mean_Rating)) +
+  geom_col(fill = "brown") +  
+  theme_minimal() +
+  labs(
+    title = "Average Rating by Year", 
+    x = "Year", 
+    y = "Average Rating"
+  )
+
+# Grafiği yazdır
+print(plot_mean_rating_year_bar)
+
+```
+
+```{r}
+ggplot(imdb_movies_datas, aes(x = as.factor(Year), y = Rating)) +
+  geom_boxplot(fill = "brown") +
+  labs(title = "Box Plots of Ratings of Turkish Movies Over the Years",
+       x = "Year",
+       y = "Rating") +
+  theme_minimal()
+```
+
+```{r}
+# Number of movies over the years
+ggplot(average_ratings, aes(x = Year, y = Number_of_Movies)) +
+  geom_bar(stat = "identity", fill = "brown") +
+  labs(title = "Number of Turkish Movies Released Each Year",
+       x = "Year",
+       y = "Number of Movies") +
+  theme_minimal()
+```
+
+```{r}
+ggplot(average_ratings, aes(x = as.numeric(Year), y = Number_of_Movies)) +
+  geom_point(size = 3, color = "black", alpha = 0.7) +  
+  geom_line(group = 1, color = "blue", linetype = "dashed", alpha = 0.6) +  
+  labs(
+    title = "Number of Turkish Movies Released Each Year",
+    x = "Year",
+    y = "Number of Movies"
+  ) +
+  theme_minimal()
+
+
+
+```
+
+## d. Do you believe there is a relationship between the number of votes a movie receivedand its rating? Investigate the correlation between Votes and Ratings.
+
+#### The correlation coefficient between movie length and scores is 0.4558, indicating a positive and moderate relationship between the two variables. This means that longer movies generally receive higher scores, but this is not always the case.(Sır,I got help from AI)
+
+```{r}
+# 'K' karakterlerini kaldır
+imdb_movies_datas$Votes <- gsub("K", "", imdb_movies_datas$Votes)
+
+# Sonuçları kontrol et
+head(imdb_movies_datas$Votes)
+
+# Boşlukları kaldır
+imdb_movies_datas$Votes <- trimws(imdb_movies_datas$Votes)
+
+# Geçersiz karakterleri kaldır (sadece sayılar ve 'K' kalır)
+imdb_movies_datas$Votes <- gsub("[^0-9K]", "", imdb_movies_datas$Votes)
+
+# 'K' harfini kaldır
+imdb_movies_datas$Votes <- gsub("K", "", imdb_movies_datas$Votes)
+
+# Sayısal hale çevir
+imdb_movies_datas$Rating <- as.numeric(imdb_movies_datas$Rating)
+
+# Veri yapısını tekrar kontrol et
+str(imdb_movies_datas)
+
+
+
+# Duration ve Rating arasındaki korelasyonu hesapla
+corr_duration_rating <- cor(imdb_movies_datas$Duration, imdb_movies_datas$Rating, use = "complete.obs")
+
+# Korelasyon katsayısını yazdır
+cat("Correlation Coefficient between Duration and Ratings:", corr_duration_rating, "\n")
+
+```
+
+```{r}
+library(ggplot2)
+
+ggplot(imdb_movies_datas, aes(x = Duration, y = Rating)) +
+  geom_point(alpha = 0.6, color = "blue") +  
+  geom_smooth(method = "lm", color = "red", se = TRUE) +  
+  labs(
+    title = "Relationship Between Movie Duration and IMDb Rating",
+    x = "Duration (Min)",
+    y = "IMDb Rating"
+  ) +
+  theme_minimal()  
+
+
+```
+
+## e. Do you believe there is a relationship between a movie’s duration and its rating?
+
+Investigate the correlation between Duration and Ratings.
+
+#### The correlation coefficient between the number of votes and the ratings is -0.0342, indicating that there is almost no relationship between these two variables. That is, the number of votes a movie receives does not significantly affect its ratings.(Sır, I got help from AI)
+
+```{r}
+imdb_movies_datas$Votes <- gsub("K", "", imdb_movies_datas$Votes)
+
+# Sonuçları kontrol et
+head(imdb_movies_datas$Votes)
+
+# Boşlukları kaldır
+imdb_movies_datas$Votes <- trimws(imdb_movies_datas$Votes)
+
+# Geçersiz karakterleri kaldır (sadece sayılar ve 'K' kalır)
+imdb_movies_datas$Votes <- gsub("[^0-9K]", "", imdb_movies_datas$Votes)
+
+# 'K' harfini kaldır
+imdb_movies_datas$Votes <- gsub("K", "", imdb_movies_datas$Votes)
+
+# Sayısal hale çevir
+imdb_movies_datas$Rating <- as.numeric(imdb_movies_datas$Rating)
+imdb_movies_datas$Votes <- as.numeric(imdb_movies_datas$Votes)
+
+str(imdb_movies_datas)
+corr_votes_rating <- cor(imdb_movies_datas$Votes, imdb_movies_datas$Rating, use =
+                           "complete.obs")
+
+
+cat("Correlation Coefficient between Votes and Ratings:", corr_votes_rating, "\n")
+
+```
+
+```{r}
+
+str(imdb_movies_datas)
+imdb_movies_datas$Votes <- as.numeric(imdb_movies_datas$Votes)
+imdb_movies_datas$Rating <- as.numeric(imdb_movies_datas$Rating)
+
+ggplot(imdb_movies_datas, aes(x = Votes, y = Rating)) +
+  geom_point(alpha = 0.6, color = "blue") +  
+  geom_smooth(method = "lm", color = "red", se = TRUE) +  
+  labs(
+    title = "Relationship Between Votes and IMDb Rating",
+    x = "Votes",
+    y = "IMDb Rating"
+  ) +
+  theme_minimal()  
+
+
+
+
+```
+
+# Part 4
+
+# Repeat steps 1 and 2 for a different advanced IMDb search. This time, find Turkish movies that are in the top 1000 movies on IMDb. Perform similar scraping to create another Data Frame with only the columns: Title, Year.
+
+### Order the 11 movies based on their Rank. Are these the same first high-rated 11movies in your initial data frame? If yes, does this imply that IMDb uses rankingsalone to determine their top 1000 movie list? If not, what does this imply?
+
+#### This answer is no, they are not the same. My guess is that it is just not ranked, but is actually applied using an average of all the factors or some other metric.(Sir, I got help from AI)
+
+```{r}
+library(rvest)
+library(dplyr)
+
+# Turkish Top 1000 URL
+url_top_1000_turkish <- "https://www.imdb.com/search/title/?title_type=feature&groups=top_1000&country_of_origin=TR&sort=num_votes,desc"
+
+# Function to scrape Title and Year for Turkish Top 1000 movies
+scrape_turkish_top_1000_data <- function(url) {
+  page <- read_html(url)
+  
+  # Scrape titles
+  titles <- page %>% html_nodes(".ipc-title__text") %>% html_text()
+  
+  # Scrape years
+  years <- page %>% html_nodes(".dli-title-metadata-item:nth-child(1)") %>% html_text()
+  
+  # Clean and match lengths
+  max_length <- max(length(titles), length(years))
+  titles <- rep(titles, length.out = max_length)
+  years <- rep(years, length.out = max_length)
+  
+  # Create a data frame with Title and Year
+  movie_data <- tibble(
+    Title = titles,
+    Year = years
+  )
+  
+  return(movie_data)
+}
+
+# Title and Year 
+turkish_top_1000_data <- scrape_turkish_top_1000_data(url_top_1000_turkish)
+
+
+turkish_top_1000_data$Year <- as.numeric(gsub("[^0-9]", "", turkish_top_1000_data$Year))
+imdb_movies_datas$Year <- as.numeric(imdb_movies_datas$Year)
+
+merged_data <- turkish_top_1000_data %>%
+  left_join(imdb_movies_datas, by = c("Title", "Year"))
+
+sorted_data <- merged_data %>%
+  arrange(desc(as.numeric(Rating))) %>%
+  head(11)
+
+top_movies <- imdb_movies_datas %>%
+  arrange(desc(as.numeric(Rating))) %>%
+  head(11)
+
+same_movies <- all(sorted_data$Title %in% top_movies$Title)
+
+if (same_movies) {
+  message("The top 11 movies are the same in both lists. This suggests IMDb rankings might heavily depend on ratings.")
+} else {
+  message("The top 11 movies differ, indicating IMDb rankings consider other factors beyond ratings, such as votes or popularity.")
+}
+
+# Print Results
+cat("Top 11 Ranked Turkish Movies by IMDb Rank:\n")
+
+cat("\nTop 11 Highest-Rated Movies from Initial Data Frame:\n")
+print(top_movies)
+
+```
+
+```{r}
+print(sorted_data)
+
+```
+
+```{r}
+print(top_movies)
+
 ```
